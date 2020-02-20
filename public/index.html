@@ -24,11 +24,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1c768060f7d94f26f3108a70a52caf0f"></script>
+
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="map" style="width:1000px;height:400px;"></div>
+    <script>
+  		var container = document.getElementById('map');
+  		var options = {
+  			center: new kakao.maps.LatLng(33.450701, 126.570667),
+  			level: 3
+  		};
+
+  		var map = new kakao.maps.Map(container, options);
+  	</script>
+
     <div id="root"></div>
+
+    <div id="test"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
