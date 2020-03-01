@@ -29,10 +29,15 @@
     <title>React App</title>
   </head>
   <body>
+    <div id="root"></div>
+
+    <div id="contact"></div>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="map" style="width:1000px;height:400px;"></div>
+    <h2> 카카오 맵 호출 Non-React </h2>
+    <div id="kakaomap1" style="width:100px;height:50px;"></div>
     <script>
-  		var container = document.getElementById('map');
+  		var container = document.getElementById('kakaomap1');
   		var options = {
   			center: new kakao.maps.LatLng(33.450701, 126.570667),
   			level: 3
@@ -41,9 +46,7 @@
   		var map = new kakao.maps.Map(container, options);
   	</script>
 
-    <div id="root"></div>
-
-    <div id="test"></div>
+    <div id="kakaomap2"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

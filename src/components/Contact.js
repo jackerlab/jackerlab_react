@@ -10,10 +10,16 @@ export default class Contact extends React.Component {
     this.state = {
       selectedKey: -1,
       keyword: '',
-      contactData: [{
+      contactData: [
+      {
         name: 'test',
         phone: '010-0000-0000'
-      }]
+      },
+      {
+        name: 'jackerlab',
+        phone: '010-0000-0000'
+      },
+    ]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -85,10 +91,10 @@ export default class Contact extends React.Component {
 
     return (
       <div>
-        <h1>Contacts</h1>
+        <h2>Contacts 테스트</h2>
         <input
           name="keyword"
-          placeholder="Search"
+          placeholder="입력하면 Search가 됩니다."
           value={this.state.keyword}
           onChange={this.handleChange}
         />

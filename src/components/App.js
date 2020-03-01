@@ -5,7 +5,7 @@ import KakaoMap from './KakaoMap';
 class App extends React.Component {
   render() {
     return (
-      <Contact />
+      <h1> [React 테스트] </h1>
     );
   }
 }

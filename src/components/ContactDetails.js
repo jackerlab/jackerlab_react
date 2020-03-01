@@ -13,7 +13,7 @@ export default class ContactDetails extends React.Component {
 
     return (
       <div>
-        <h2>Details</h2>
+        <h3>Details</h3>
         {this.props.isSelected ? details : blank}
       </div>
     );

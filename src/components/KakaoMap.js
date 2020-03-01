@@ -15,7 +15,8 @@ export default class KakaoMap extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="Map" id="map1" style={ {width:'1000px', height:'500px'} }></div>
+        <h2> 카카오 맵 호출 React </h2>
+        <div className="Map" id="map1" style={ {width:'100px', height:'50px'} }></div>
 
       </React.Fragment>
     );
