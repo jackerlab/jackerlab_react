@@ -1,13 +1,12 @@
 import React from 'react';
-import Contact from './Contact';
-import KakaoMap from './KakaoMap';
+import Menu from './Menu';
+import SearchForm from './SearchForm';
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <h1> [React 테스트] </h1>
+      // <SearchForm />
+      <Menu />
     );
   }
 }
-
-export default App;

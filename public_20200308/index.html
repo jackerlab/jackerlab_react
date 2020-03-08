@@ -24,20 +24,38 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1c768060f7d94f26f3108a70a52caf0f"></script>
 
-    <!-- Bootstrap Start-->
+    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- Bootstrap End-->
 
     <title>React App</title>
   </head>
   <body>
     <div id="root"></div>
 
+    <div id="contact"></div>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h2> 카카오 맵 호출 Non-React </h2>
+    <div id="kakaomap1" style="width:100px;height:50px;"></div>
+    <script>
+  		var container = document.getElementById('kakaomap1');
+  		var options = {
+  			center: new kakao.maps.LatLng(33.450701, 126.570667),
+  			level: 3
+  		};
+
+  		var map = new kakao.maps.Map(container, options);
+  	</script>
+
+    <div id="kakaomap2"></div>
+
+    <div id="loginform"></div>
+
+    <div id="searchform"></div>
+
+    <div id="signin" class="container"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
