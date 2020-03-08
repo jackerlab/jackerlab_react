@@ -16,7 +16,7 @@ export default class Menu extends React.Component {
         </div>
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Home</div>
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"><h1>Home</h1></div>
             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><SearchForm /></div>
             <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Messages</div>
             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Settings</div>
