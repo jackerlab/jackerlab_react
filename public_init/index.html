@@ -24,38 +24,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1c768060f7d94f26f3108a70a52caf0f"></script>
-
-    <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>React App</title>
   </head>
   <body>
     <div id="root"></div>
 
-    <div id="contact"></div>
-
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <h2> 카카오 맵 호출 Non-React </h2>
-    <div id="kakaomap1" style="width:100px;height:50px;"></div>
-    <script>
-  		var container = document.getElementById('kakaomap1');
-  		var options = {
-  			center: new kakao.maps.LatLng(33.450701, 126.570667),
-  			level: 3
-  		};
-
-  		var map = new kakao.maps.Map(container, options);
-  	</script>
-
-    <div id="kakaomap2"></div>
-
-    <div id="loginform"></div>
-
-    <div id="searchform"></div>
-
-    <div id="signin" class="container"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
