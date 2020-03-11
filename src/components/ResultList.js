@@ -10,12 +10,12 @@ export default class ResultList extends React.Component {
       'iptables 5',
     ];
 
-    const listItems = numbers.map((number) =>
-      <li class="list-group-item">{number}</li>
+    const listItems = numbers.map((number, i) =>
+      <li className="list-group-item" key={i}>{number}</li>
     );
 
     return (
-      <ul class="list-group">
+      <ul className="list-group">
         {listItems}
       </ul>
 
