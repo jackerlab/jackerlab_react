@@ -1,13 +1,11 @@
 import React from 'react';
 
-import ResultList from './ResultList';
-
 export default class EventTest extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       data: [],
-  };
+    };
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -15,7 +13,7 @@ export default class EventTest extends React.Component {
   handleClick() {
     this.setState({data:
       [
-        'iptables 1',
+        '<b> iptables 1 </b>',
         'iptables 2',
         'iptables 3',
         'iptables 4',

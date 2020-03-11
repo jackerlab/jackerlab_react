@@ -3,7 +3,7 @@ import React from 'react';
 export default class ResultList extends React.Component {
   render() {
     const numbers = [
-      'iptables 1',
+      '<b> iptables 1 </b>',
       'iptables 2',
       'iptables 3',
       'iptables 4',
