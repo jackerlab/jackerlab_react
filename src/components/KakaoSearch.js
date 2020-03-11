@@ -24,7 +24,7 @@ export default class KakaoSearch extends React.Component {
   }
 
   _callApi = () => {
-    const _apiKey = 'KakaoAK 1b0987d0f45d6ea74e358e85381c79e1';
+    const _apiKey = 'KakaoAK key';
     const _url = 'https://dapi.kakao.com/v2/search/web';
     const _getQuery = `?query=${this.state.query}`;
 

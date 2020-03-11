@@ -26,7 +26,7 @@ eventtest() {
   fetch("https://dapi.kakao.com/v2/search/web" + `?query=${this.state.query}`, {
      method: 'GET',
      headers: {
-      Authorization: 'KakaoAK 1b0987d0f45d6ea74e358e85381c79e1'
+      Authorization: 'KakaoAK key'
      }
    })
    .then(res => res.json())
